@@ -1,0 +1,82 @@
+$primaryColor:#111443;
+$buttonColor: #30324c;
+
+@mixin flex{
+    display:flex;
+    flex-flow: row nowrap;
+}
+
+*{
+    font-family:Arial;
+  
+    
+}
+
+body{
+    background:$primaryColor;
+    font-size:1rem;
+    color:white;
+}
+
+h1{
+    color:inherit;
+    text-align:center;
+    margin-top:130px;
+}
+
+div{
+    border:0px solid black;
+}
+
+.container{
+    @include flex;
+    min-height:100px;
+    justify-content:center;
+    align-items:center;
+
+    .base{
+        flex-basis:50%;
+        min-height:180px;
+        background:white;
+        border-radius:10px;
+
+        span{
+            display:block;
+            text-align:right;
+            color:$primaryColor;
+            font-weight:bolder;
+        }
+
+        p{
+            color:$primaryColor;
+            font-weight:bold;
+            font-size:1.3rem;
+            text-align:center;
+            padding:15px;
+        }
+
+        button{
+            display:block;
+            margin-left:auto;
+            margin-right:auto;
+            color:inherit;
+            background:$buttonColor;
+            padding:10px;
+            border-radius:10px;
+            font-weight:bolder;
+            font-size:larger;
+            border:2px solid $buttonColor;
+
+        }
+    }
+}
+
+h3{
+    color:inherit;
+    text-align:center;
+
+    a{
+        text-decoration:none;
+        color:#ba318c;
+    }
+}

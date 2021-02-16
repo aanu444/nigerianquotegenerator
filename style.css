@@ -1,0 +1,83 @@
+* {
+  font-family: Arial;
+}
+
+body {
+  background: #111443;
+  font-size: 1rem;
+  color: white;
+}
+
+h1 {
+  color: inherit;
+  text-align: center;
+  margin-top: 130px;
+}
+
+div {
+  border: 0px solid black;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  min-height: 100px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .base {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  min-height: 180px;
+  background: white;
+  border-radius: 10px;
+}
+
+.container .base span {
+  display: block;
+  text-align: right;
+  color: #111443;
+  font-weight: bolder;
+}
+
+.container .base p {
+  color: #111443;
+  font-weight: bold;
+  font-size: 1.3rem;
+  text-align: center;
+  padding: 15px;
+}
+
+.container .base button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color: inherit;
+  background: #30324c;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: bolder;
+  font-size: larger;
+  border: 2px solid #30324c;
+}
+
+h3 {
+  color: inherit;
+  text-align: center;
+}
+
+h3 a {
+  text-decoration: none;
+  color: #ba318c;
+}
+/*# sourceMappingURL=style.css.map */
